@@ -1,0 +1,87 @@
+.algoPage{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.solveBtnContainer{
+  padding: 20px;
+}
+
+.gridContainer{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  transition: all 1s ease;
+  margin-top: 20px;
+  
+}
+
+.eachCell {
+  background-color: rgb(248, 248, 248);
+  height: 40px;
+  width: 40px;
+  border: rgb(243, 243, 243) 0.2px solid;
+  display: flex;
+}
+
+.visualCell {
+  background-color: #3498db;
+  /* background-color: rgb(248, 248, 248); */
+  animation: animation 0.5s;
+}
+
+.pathCell {
+  background-color: #f1c40f;
+}
+
+.start {
+  background-color: #2ecc71;
+}
+
+.end {
+  background-color: #e74c3c;
+}
+
+.wall {
+  background-color: #682f2f;
+}
+
+@keyframes animation {
+  0.0% {
+    background-color: #2980b9;
+    transform: scale(0.3);
+  }
+  100% {
+    background-color: #3498db;
+    transform: scale(1.0);
+  }
+}
+
+.solveBtn {
+  border: none;
+  outline: none;
+  /* margin-bottom: 20px; */
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-bottom: #2980b9 5px solid;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.solveBtn:active {
+  border-bottom: #2980b9 2px solid;
+}
+
+.credits {
+  color: rgb(173, 173, 173);
+}
